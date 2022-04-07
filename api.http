@@ -1,0 +1,44 @@
+
+
+###
+
+GET http://localhost:3031/chat
+
+###
+
+POST http://localhost:3031/chat
+Content-Type: application/json
+
+{
+  "text": "22"
+}
+
+###
+
+POST http://localhost:3031/authentication
+Content-Type: application/json
+
+{
+  "strategy": "local",
+  "email": "1",
+  "password": "1"
+}
+
+###
+
+http://localhost:3031/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE2NDkzNjM4OTAsImV4cCI6MTY0OTQ1MDI5MCwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiNjI0ZWZkODI4ZThiZDU4NWUzYmQ4YTc3IiwianRpIjoiZTgzNzJiNDQtZDE3YS00YmU3LWE5NTItOTRhMjdmYmExYjRjIn0.bM0hgZ9LWpPBONIWeuxS4bVa_3wiJcNVuMyiM3mVXtg
+
+###
+
+http://localhost:3031/main
+
+###
+
+POST http://localhost:3031/main
+Content-Type: application/json
+
+{
+  "name": "app.version",
+  "value": "0.0.0"
+}
