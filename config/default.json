@@ -28,5 +28,5 @@
       "passwordField": "password"
     }
   },
-  "mongodb": "mongodb://127.0.0.1:27017/mojaprodavnica"
+  "mongodb": "mongodb+srv://0K3qnYek3DR:RovrWqBrqk5@cluster0.ymotm.mongodb.net/mojaprodavnica?retryWrites=true&w=majority"
 }

@@ -1,8 +1,24 @@
 
 
+
+http://localhost:3031/main
+
 ###
 
-GET http://localhost:3031/chat
+DELETE http://localhost:3031/main/62618bb8c24f5fe466591394
+
+###
+
+POST http://localhost:3031/create-payment-intent
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "id": "prod_LSXSpfeRqc6yd7"
+    }
+  ]
+}
 
 ###
 
@@ -10,7 +26,7 @@ POST http://localhost:3031/chat
 Content-Type: application/json
 
 {
-  "text": "22"
+  "text": "211"
 }
 
 ###
@@ -20,18 +36,19 @@ Content-Type: application/json
 
 {
   "strategy": "local",
-  "email": "1",
-  "password": "1"
+  "email": "admin@nikolav.rs",
+  "password": "122333"
 }
 
 ###
 
-http://localhost:3031/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyJ9.eyJpYXQiOjE2NDkzNjM4OTAsImV4cCI6MTY0OTQ1MDI5MCwiYXVkIjoiaHR0cHM6Ly95b3VyZG9tYWluLmNvbSIsImlzcyI6ImZlYXRoZXJzIiwic3ViIjoiNjI0ZWZkODI4ZThiZDU4NWUzYmQ4YTc3IiwianRpIjoiZTgzNzJiNDQtZDE3YS00YmU3LWE5NTItOTRhMjdmYmExYjRjIn0.bM0hgZ9LWpPBONIWeuxS4bVa_3wiJcNVuMyiM3mVXtg
+POST http://localhost:3031/posts
+Content-Type: application/json
 
-###
-
-http://localhost:3031/main
+{
+  "name": "n12",
+  "post": "122"
+}
 
 ###
 
@@ -39,6 +56,18 @@ POST http://localhost:3031/main
 Content-Type: application/json
 
 {
-  "name": "app.version",
-  "value": "0.0.0"
+  "name": "app.url",
+  "value": "https://mojaprodavnica.online/"
+}
+
+###
+http://localhost:3031/products
+
+###
+
+POST http://localhost:3031/products
+Content-Type: application/json
+
+{
+  "title": "product-2"
 }

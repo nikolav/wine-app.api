@@ -1,24 +1,16 @@
-// users-model.js - A mongoose model
-//
+// posts-model.js - A mongoose model
+// 
 // See http://mongoosejs.com/docs/models.html
 // for more of what you can do here.
 module.exports = function (app) {
-  const modelName = "users";
-  const mongooseClient = app.get("mongooseClient");
-  const schema = new mongooseClient.Schema(
-    {
-      email: {
-        type     : String,
-        unique   : true,
-        required : true,
-      },
-      password : String,
-      avatar   : String,
-    },
-    {
-      timestamps: true,
-    }
-  );
+  const modelName = 'posts';
+  const mongooseClient = app.get('mongooseClient');
+  const { Schema } = mongooseClient;
+  const schema = new Schema({
+    text: { type: String, required: true }
+  }, {
+    timestamps: true
+  });
 
   // This is necessary to avoid model compilation errors in watch mode
   // see https://mongoosejs.com/docs/api/connection.html#connection_Connection-deleteModel
@@ -26,4 +18,5 @@ module.exports = function (app) {
     mongooseClient.deleteModel(modelName);
   }
   return mongooseClient.model(modelName, schema);
+  
 };
