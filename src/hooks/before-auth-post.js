@@ -14,14 +14,14 @@ module.exports = (options = {}) => {
     // checks `/main` service to see if there is a `firebase/auth` user
     // id: `user-${uid}-firebase`; throws if it does not exist
 
-    const serviceMain = app.service("main");
+    // const serviceMain = app.service("main");
 
     // const uid = await serviceMain.get(`user-${data.uid}-firebase`);
     // if (uid) goodToGo_ProcessData();
 
 
 
-    throw "@before-auth-post";
+    // throw "@before-auth-post";
 
     return context;
   };
