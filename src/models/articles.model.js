@@ -17,10 +17,7 @@ module.exports = function (app) {
       image: String,
 
       // reference to firebase user-id
-      author: {
-        type: String,
-        required: true,
-      },
+      author: String,
     },
     {
       timestamps: true,
