@@ -1,73 +1,7 @@
 
 
-
-http://localhost:3031/main
-
 ###
 
-DELETE http://localhost:3031/main/62618bb8c24f5fe466591394
+http://localhost/api
 
 ###
-
-POST http://localhost:3031/create-payment-intent
-Content-Type: application/json
-
-{
-  "items": [
-    {
-      "id": "prod_LSXSpfeRqc6yd7"
-    }
-  ]
-}
-
-###
-
-POST http://localhost:3031/chat
-Content-Type: application/json
-
-{
-  "text": "211"
-}
-
-###
-
-POST http://localhost:3031/authentication
-Content-Type: application/json
-
-{
-  "strategy": "local",
-  "email": "admin@nikolav.rs",
-  "password": "122333"
-}
-
-###
-
-POST http://localhost:3031/posts
-Content-Type: application/json
-
-{
-  "name": "n12",
-  "post": "122"
-}
-
-###
-
-POST http://localhost:3031/main
-Content-Type: application/json
-
-{
-  "name": "app.url",
-  "value": "https://mojaprodavnica.online/"
-}
-
-###
-http://localhost:3031/products
-
-###
-
-POST http://localhost:3031/products
-Content-Type: application/json
-
-{
-  "title": "product-2"
-}

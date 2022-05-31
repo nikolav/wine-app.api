@@ -28,8 +28,11 @@ module.exports = function (app) {
       // crveno | rose | belo
       color: String,
       //
-      // opis vina
+      // opis
       desciption: String,
+      //
+      // kratka | srednja | duga
+      finish: String,
       //
       // sorte grozdja
       grape: Array,
@@ -37,30 +40,36 @@ module.exports = function (app) {
       // fotografija
       image: String,
       //
-      // poreklo
-      origin: String,
+      // bistro
+      isClear: Boolean,
       //
-      // nivo kiseline, alc., tanini
-      percentAcid: Number,
-      percentAlcohol: Number,
-      percentTannin: Number,
+      // penusavo #| desertno | fortifidovano | aromatizovano
+      isFizzy: Boolean,
       //
-      // cena i valuta
+      // mutno
+      isHazy: Boolean,
+      //
+      // aka. `style`
+      // suvo | polusuvo | poluslatko | slatko
+      // 1..4
+      levelSugar: Number,
+      // 1..3; nizak | srednji | visok
+      levelAcid: Number,
+      levelAlc: Number,
+      levelTannin: Number,
+      // 1..3; kratka | srednja | duga
+      levelFinish: Number,
+      //
+      // cena (RDS); #valuta
       price: Number,
-      priceCurrency: String,
       //
-      // 1..5
-      rating: {
+      // proizvodjac, vinarija
+      producer: String,
+      //
+      // 0..4
+      wineRating: {
         type: Number,
         required: true,
-      },
-      //
-      // suvo | polusuvo | poluslatko | slatko
-      style: String,
-      //
-      // penusavo | desertno | fortifidovano | aromatizovano
-      type: {
-        type: String,
       },
       //
       // godina berbe
