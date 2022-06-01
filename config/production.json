@@ -1,5 +1,5 @@
 {
-  "host": "https://cheery-bubblegum-30d75c.netlify.app/",
+  "host": "app.com",
   "port": "PORT",
   "mongodb": "mongodb+srv://0K3qnYek3DR:RovrWqBrqk5@cluster0.ymotm.mongodb.net/test-wine-online?retryWrites=true&w=majority"
 }

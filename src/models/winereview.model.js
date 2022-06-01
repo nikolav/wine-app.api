@@ -29,10 +29,10 @@ module.exports = function (app) {
       color: String,
       //
       // opis
-      desciption: String,
+      description: String,
       //
       // kratka | srednja | duga
-      finish: String,
+      // finish: String,
       //
       // sorte grozdja
       grape: Array,

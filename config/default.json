@@ -1,6 +1,6 @@
 {
-  "host": "https://cheery-bubblegum-30d75c.netlify.app",
-  "port": 80,
+  "host": "localhost",
+  "port": 3031,
   "public": "../public/",
   "paginate": {
     "default": 100,
@@ -18,7 +18,7 @@
       "header": {
         "typ": "access"
       },
-      "audience": "https://cheery-bubblegum-30d75c.netlify.app",
+      "audience": "domain.com",
       "issuer": "feathers",
       "algorithm": "HS256",
       "expiresIn": "1d"
@@ -28,5 +28,5 @@
       "passwordField": "password"
     }
   },
-  "mongodb": "mongodb+srv://0K3qnYek3DR:RovrWqBrqk5@cluster0.ymotm.mongodb.net/test-wine-online?retryWrites=true&w=majority"
+  "mongodb": "mongodb+srv://0K3qnYek3DR:RovrWqBrqk5@cluster0.ymotm.mongodb.net/mojaprodavnica?retryWrites=true&w=majority"
 }
