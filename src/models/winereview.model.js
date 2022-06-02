@@ -23,7 +23,14 @@ module.exports = function (app) {
       },
       //
       // arome..
-      aroma: String,
+      aromaBerries: Boolean,
+      aromaCitrus: Boolean,
+      aromaFruit: Boolean,
+      aromaHerb: Boolean,
+      aromaSpice: Boolean,
+      aromaTropical: Boolean,
+      aromaVanilla: Boolean,
+      aromaWood: Boolean,
       //
       // crveno | rose | belo
       color: String,
@@ -31,11 +38,8 @@ module.exports = function (app) {
       // opis
       description: String,
       //
-      // kratka | srednja | duga
-      // finish: String,
-      //
       // sorte grozdja
-      grape: Array,
+      grape: String,
       //
       // fotografija
       image: String,
@@ -49,7 +53,6 @@ module.exports = function (app) {
       // mutno
       isHazy: Boolean,
       //
-      // aka. `style`
       // suvo | polusuvo | poluslatko | slatko
       // 1..4
       levelSugar: Number,
