@@ -8,8 +8,9 @@ module.exports = function (app) {
   const { Schema } = mongooseClient;
   const schema = new Schema(
     {
-      author: String,
       text: String,
+      author: String,
+      author_id: String,
     },
     {
       timestamps: true,
