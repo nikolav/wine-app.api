@@ -9,6 +9,8 @@ module.exports = function (app) {
   const schema = new Schema(
     {
       text: String,
+      // channel message belongs to
+      room: String,
       author: String,
       author_id: String,
     },
